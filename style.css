@@ -12,15 +12,19 @@ li {
     padding: 15px;
 }
 
+.navbar-nav{
+    --bs-nav-link-padding-y: 0 !important;
+}
+
 .navbar-nav .nav-link {
-    color: #ffffff !important;
+    color: #ffffff;
     font-size: 1.1rem;
    
 }
 
 .navbar-nav .nav-link:hover {
     font-weight: 500;
-    color: #1f1e1e !important;
+    color: #1f1e1e;
     transition: 0.1s;
 
 }
@@ -70,9 +74,8 @@ li {
 }
 
 .titulo h2 {
-    color: rgb(193, 46, 46);
+    color: rgb(219, 53, 53);
     font-size: 2.5rem;
-    text-shadow: 1px 1px 6px rgba(95, 95, 95, 0.5);;
 }
 
 .cards {
@@ -92,7 +95,7 @@ li {
 }
 
 .card-body h5{
-    color: rgb(193, 46, 46); ;
+    color: rgb(219, 53, 53); ;
     font-weight: bold;
 }
 
@@ -128,16 +131,25 @@ li {
 .form-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
 .form-card{
     padding: 50px;
-    height: 75vh;
+    width: 50vh;
     text-align: center;
     background-color: #d8d8d8bc;
     border-radius: 16px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); 
+}
+
+label{
+    font-weight: bold;
+}
+
+textarea{
+    resize: none;
 }
 
 .btn-primary {
@@ -160,6 +172,15 @@ li {
     background-color: white !important; 
     border-color: rgb(22, 91, 45) !important; 
     color: rgb(22, 91, 45) !important; 
+}
+
+.error {
+    color: red;
+    font-size: 0.875rem;
+}
+
+.is-invalid {
+    border-color: red;
 }
 
 .footer {
@@ -197,4 +218,62 @@ footer .nav-link:hover {
     text-decoration: underline;
     transition: 0.3s;
 
+}
+
+/* DARK MODE */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+
+body.dark-mode .navbar {
+    background-color: #242424 !important;  
+}
+
+
+body.dark-mode .navbar-nav .nav-link {
+    color: #e0e0e0; 
+}
+
+body.dark-mode .nav-link:hover {
+    color: rgb(219, 53, 53) !important;
+}
+
+
+body.dark-mode .footer {
+    background-color: #242424;  
+    color: #e0e0e0;
+}
+
+body.dark-mode .social-icons a:hover{
+    color: rgb(219, 53, 53) !important;
+}
+
+
+body.dark-mode .card {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+
+body.dark-mode .form-control {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #777;
+}
+
+body.dark-mode .form-label{
+    color: #000000;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #c14242;
+    border-color: #c14242;
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: #a11f1f;
+    border-color: #a11f1f;
 }
