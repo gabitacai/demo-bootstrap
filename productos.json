@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "nombre": "Adorno de mesa",
+      "descripcion": "Adorno de duende para decorar la mesa navideña.",
+      "precio": 2500,
+      "categoria": "Decoración",
+      "imagen": "img/adorno-mesa.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Adorno perrito",
+      "descripcion": "Adorno de perrito para poner en el arbolito.",
+      "precio": 2900,
+      "categoria": "Decoración",
+      "imagen": "img/adorno-perrito.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Esfera dorada",
+      "descripcion": "Adorno esfera dorada para colgar en el arbolito.",
+      "precio": 1500,
+      "categoria": "Decoración",
+      "imagen": "img/pelota-dorada.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Árbol navideño",
+      "descripcion": "Pino navideño tamaño chico ideal espacios pequeños.",
+      "precio": 9700,
+      "categoria": "Árboles",
+      "imagen": "img/arbolito-navideño.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Luces cálidas",
+      "descripcion": "Luces para decorar el arbolito, o cualquier lugar de la casa.",
+      "precio": 6300,
+      "categoria": "Luces",
+      "imagen": "img/luces-navidad.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Vela aromática",
+      "descripcion": "Vela con aroma a coco y vainilla para perfumar el ambiente.",
+      "precio": 4500,
+      "categoria": "Decoración",
+      "imagen": "img/vela-navidad.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Muñeca",
+      "descripcion": "Muñeca tejida para decoracion del árbol o la mesa navideña.",
+      "precio": 2800,
+      "categoria": "Decoración",
+      "imagen": "img/muñeca-navidad.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Muñeco de nieve",
+      "descripcion": "Adorno de muñeco de nieve para el árbol de navidad.",
+      "precio": 2000,
+      "categoria": "Decoración",
+      "imagen": "img/muñeco-nieve.jpg"
+    }
+  ]
