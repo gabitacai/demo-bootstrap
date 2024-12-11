@@ -19,6 +19,7 @@ li {
 .navbar-nav .nav-link {
     color: #ffffff;
     font-size: 1.1rem;
+    font-weight: 500;
    
 }
 
@@ -76,6 +77,7 @@ li {
 .titulo h2 {
     color: rgb(219, 53, 53);
     font-size: 2.5rem;
+    text-shadow: 1px 1px 5px rgba(42, 42, 42, 0.466);;
 }
 
 .cards {
@@ -122,10 +124,11 @@ li {
     background-position: center center;
 }
 
-#fondo-form .titulo h2{
-    color: white;
+.titulo-form{
+    color: rgb(219, 53, 53);
     font-size: 2.5rem;
-    text-shadow: 1px 1px 8px rgba(42, 42, 42, 0.864);;
+    text-shadow: 1px 1px 5px rgba(42, 42, 42, 0.466);;
+    margin-bottom: 15px;
 }
 
 .form-container {
@@ -177,6 +180,7 @@ textarea{
 .error {
     color: red;
     font-size: 0.875rem;
+    font-weight: bold;
 }
 
 .is-invalid {
@@ -241,6 +245,9 @@ body.dark-mode .nav-link:hover {
     color: rgb(219, 53, 53) !important;
 }
 
+body.dark-mode .titulo h2{
+    text-shadow: 1px 1px 7px rgba(255, 255, 255, 0.291);;
+}
 
 body.dark-mode .footer {
     background-color: #242424;  
@@ -255,6 +262,10 @@ body.dark-mode .social-icons a:hover{
 body.dark-mode .card {
     background-color: #333;
     color: #e0e0e0;
+}
+
+body.dark-mode .cards .card{
+    box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.291);
 }
 
 

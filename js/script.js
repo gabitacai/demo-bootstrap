@@ -41,7 +41,7 @@ document.getElementById("footerId").innerHTML = `
                     <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
                 </div>
-                <span> <a class="nav-link" href="gforesti@gmail.com">Contactate conmigo</a></span>
+                <span> <a class="nav-link" href="form.html">Contactate conmigo</a></span>
             </div>
         </div>
 `

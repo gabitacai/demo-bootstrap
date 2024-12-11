@@ -1,16 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
     const form = document.querySelector('.form-card');
     const nombreInput = document.getElementById('nombre');
     const apellidoInput = document.getElementById('apellido');
     const emailInput = document.getElementById('email');
     const mensajeInput = document.getElementById('mensaje');
-    const submitButton = form.querySelector('button[type="submit"]');
-    
-    
+
     function showError(input, message) {
         let errorElement = input.nextElementSibling;
-        
+
         if (!errorElement || !errorElement.classList.contains('error')) {
             errorElement = document.createElement('p');
             errorElement.classList.add('error');
@@ -20,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
         input.classList.add('is-invalid');
     }
 
-    
     function clearError(input) {
         let errorElement = input.nextElementSibling;
         if (errorElement && errorElement.classList.contains('error')) {
@@ -29,18 +25,15 @@ document.addEventListener('DOMContentLoaded', function() {
         input.classList.remove('is-invalid');
     }
 
-    
     function validateInput(input) {
         const value = input.value.trim();
-        
-      
+
         if (value === '') {
             showError(input, `${input.placeholder} es obligatorio.`);
         } else {
             clearError(input);
         }
 
-       
         if (input.id === 'email') {
             const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
             if (value === '') {
@@ -53,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-   
     nombreInput.addEventListener('input', function() {
         validateInput(nombreInput);
     });
@@ -66,19 +58,15 @@ document.addEventListener('DOMContentLoaded', function() {
         validateInput(emailInput);
     });
 
-    
     form.addEventListener('submit', function(event) {
-        event.preventDefault();
-
         validateInput(nombreInput);
         validateInput(apellidoInput);
         validateInput(emailInput);
 
-        if (!form.querySelector('.is-invalid')) {
-            alert('Formulario enviado correctamente');
-        
-        } else {
+        if (form.querySelector('.is-invalid')) {
+            event.preventDefault(); 
             alert('Por favor, completa todos los campos obligatorios correctamente.');
         }
+        
     });
 });
